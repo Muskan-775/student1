@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AttendChain - Attendance</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-xl mx-auto bg-white p-6 rounded shadow-md">
+    <h1 class="text-2xl font-bold mb-6 text-center">Mark Attendance</h1>
+
+    <!-- Form to Mark Attendance -->
+    <form id="attendanceForm" class="space-y-4">
+      <div>
+        <label for="studentId" class="block text-sm font-medium text-gray-700">Student ID</label>
+        <input type="text" id="studentId" name="studentId" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+      <div>
+        <label for="date" class="block text-sm font-medium text-gray-700">Date (YYYY-MM-DD)</label>
+        <input type="text" id="date" name="date" class="w-full p-2 border border-gray-300 rounded" required />
+      </div>
+      <div>
+        <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+        <select id="status" name="status" class="w-full p-2 border border-gray-300 rounded" required>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+        </select>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Mark Attendance</button>
+    </form>
+
+    <!-- Feedback Message -->
+    <p id="feedback" class="mt-4 text-center text-gray-700"></p>
+
+    <div class="mt-6">
+      <h2 class="text-xl font-bold text-center mb-4">Get Attendance</h2>
+      <form id="getAttendanceForm" class="space-y-4">
+        <div>
+          <label for="getStudentId" class="block text-sm font-medium text-gray-700">Student ID</label>
+          <input type="text" id="getStudentId" class="w-full p-2 border border-gray-300 rounded" required />
+        </div>
+        <div>
+          <label for="getDate" class="block text-sm font-medium text-gray-700">Date (YYYY-MM-DD)</label>
+          <input type="text" id="getDate" class="w-full p-2 border border-gray-300 rounded" required />
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Get Attendance</button>
+      </form>
+      <p id="attendanceResult" class="mt-4 text-center text-gray-700"></p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.2.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@dfinity/agent@0.10.0/dist/index.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
