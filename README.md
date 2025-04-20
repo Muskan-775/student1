@@ -1,8 +1,39 @@
-# `student1`
+# 📚 Student1 - Attendance System on the Internet Computer (ICP)
 
-Welcome to your new `student1` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+A decentralized attendance system powered by 🦀 **Rust** for backend canisters and ⚛️ **React + Vite + TailwindCSS** for frontend. Built to run on the **Internet Computer Protocol (ICP)**.
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+---
+
+## 🚀 Features
+
+- 👩‍🏫 Teacher and 👨‍🎓 Student login system
+- 📅 Attendance marking on-chain
+- 🔐 Internet Identity integration (placeholder for now)
+- ⚛️ Frontend in React + TailwindCSS
+- 🦀 Smart contracts written in Rust (with `dfx`)
+
+---
+
+## 🧰 Tech Stack
+
+| Layer        | Tech                          |
+| ------------ | ----------------------------- |
+| Frontend     | React, Vite, TailwindCSS      |
+| Backend      | Rust (IC Canisters)           |
+| Blockchain   | Internet Computer Protocol     |
+| Identity     | Internet Identity (ICP)       |
+| Tooling      | DFX CLI, GitHub               |
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/Muskan-775/student1.git
+
+cd student1
+
 
 To learn more before you start working with `student1`, see the following documentation available online:
 
